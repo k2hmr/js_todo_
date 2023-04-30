@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 日本語 -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- タイトル -->
+    <title>TODO-List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- タイトルをトップに表示 -->
+    <h1>TODO-List</h1>
+    <!-- 入力フォーム -->
+    <form>
+      <input class="task_value" type="text" />
+      <button class="task_submit" type="button">保存</button>
+    </form>
+    <!-- TODOの一覧が表示される -->
+    <div id="table">
+      <h2>Todo一覧</h2>
+      <!-- タスクの進捗状況 -->
+      <h3 class="task_status"></h3>
+      <!-- タスクはここに追加 -->
+      <ul class="task_list"></ul>
+    </div>
+    <!-- タスクの削除時のモーダル -->
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <!-- 削除確認のメッセージ -->
+        <div class="modal_header">
+          <h1>本当によろしいですか？</h1>
+        </div>
+        <!-- 削除の実行ボタンとキャンセルボタン -->
+        <button id="delete_ok" class="model_button">OK</button>
+        <button id="delete_cancel" class="modal_button">キャンセル</button>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
