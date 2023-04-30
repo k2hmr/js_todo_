@@ -121,6 +121,6 @@ deleteCancelButton.addEventListener("click", (e) => {
 taskSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   const task = taskValue.value;
-  task && addTasks(task);
+  if(task && task.match(/\S/g)) addTasks(task);
   taskValue.value = "";
 });
